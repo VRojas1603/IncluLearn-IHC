@@ -13,7 +13,7 @@ body {
 
 /* Barra de navegación */
 nav {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-between;
   background-color: #74c69d;
