@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IncluLearn</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Barra de navegación -->
@@ -14,8 +18,8 @@
         <li><a href="#cursos">Cursos</a></li>
         <li><a href="#metodologia">Metodología</a></li>
         <li><a href="#como-funciona">Cómo funciona</a></li>
-        <li><a href="#opiniones">Opiniones</a></li>
         <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+        <li><a href="#formulario">Registro</a></li>
         <li><a href="#contacto">Contáctanos</a></li>
       </ul>
     </nav>
@@ -26,37 +30,27 @@
       <p>Comprometidos con la educación y la inclusión</p>
       <img
         src="imagenes/Imagen de WhatsApp 2024-09-09 a las 20.11.35_909e56eb 1 (1).png"
-        alt="Imagen de una chica saludando"
+        alt="Imagen principal"
         class="main-image"
       />
       <button>Activar lector de pantalla</button>
     </section>
 
-    <!-- Sección 2: Contenidos -->
+    <!-- Sección 2: Cursos -->
     <section id="cursos">
-      <h2>Contenidos</h2>
-      <p>Estos y muchos otros cursos más adaptados a tus hijos</p>
+      <h2>Cursos Disponibles</h2>
       <div class="contenidos">
         <div class="curso">
-          <img
-            src="imagenes/image 4.png"
-            alt="Curso: Estabilidad de emociones"
-          />
-          <p>Curso: Estabilidad de emociones</p>
+          <img src="imagenes/image 4.png" alt="Curso 1" />
+          <p>Estabilidad de emociones</p>
         </div>
         <div class="curso">
-          <img
-            src="imagenes/image 5.png"
-            alt="Curso: Conceptos básicos de la matemática"
-          />
-          <p>Curso: Conceptos básicos de la matemática</p>
+          <img src="imagenes/image 5.png" alt="Curso 2" />
+          <p>Conceptos básicos de matemáticas</p>
         </div>
         <div class="curso">
-          <img
-            src="imagenes/image 6.png"
-            alt="Curso: Ciencia y ambiente para primaria"
-          />
-          <p>Curso: Ciencia y ambiente para primaria</p>
+          <img src="imagenes/image 6.png" alt="Curso 3" />
+          <p>Ciencia y ambiente para primaria</p>
         </div>
       </div>
       <button>Descubrir más</button>
@@ -65,77 +59,68 @@
     <!-- Sección 3: Metodología -->
     <section id="metodologia">
       <h2>Nuestra Metodología</h2>
-      <p>
-        Implementamos herramientas para mejorar la accesibilidad al aprendizaje.
-      </p>
+      <p>Implementamos herramientas accesibles y adaptadas.</p>
       <div class="herramientas">
         <div class="herramienta">
-          <img src="imagenes/herramienta1 1.png" alt="JAWS" />
-          <p>
-            JAWS - Lector de pantalla para personas ciegas o con visión reducida
-          </p>
+          <img src="imagenes/herramienta1 1.png" alt="Herramienta 1" />
+          <p>JAWS - Lector de pantalla</p>
         </div>
       </div>
     </section>
-    <!-- Sección 7: Cómo Funciona -->
+
+    <!-- Sección 4: Cómo funciona -->
     <section id="como-funciona">
       <h2>¿Cómo funciona?</h2>
       <div class="pasos">
         <div class="paso">
-          <h3>1. Identifica las necesidades</h3>
-          <p>
-            Trabajamos para identificar las necesidades específicas de cada niño
-            con discapacidad auditiva o visual, adaptando las herramientas
-            educativas.
-          </p>
+          <h3>1. Identifica necesidades</h3>
+          <p>Adaptamos herramientas a las necesidades específicas.</p>
         </div>
         <div class="paso">
-          <h3>2. Transforma el contenido</h3>
-          <p>
-            Nuestra plataforma utiliza inteligencia artificial para transformar
-            materiales educativos regulares en formatos accesibles, como audio o
-            lectura con contraste ajustable.
-          </p>
+          <h3>2. Transforma contenido</h3>
+          <p>Usamos IA para crear materiales accesibles.</p>
         </div>
         <div class="paso">
           <h3>3. Aprende al mismo ritmo</h3>
-          <p>
-            Promovemos un entorno inclusivo donde todos los niños aprenden al
-            mismo ritmo, optimizando sus capacidades para un aprendizaje
-            equitativo.
-          </p>
+          <p>Promovemos educación equitativa e inclusiva.</p>
         </div>
       </div>
     </section>
-    <!-- Sección 4: Sobre Nosotros -->
-    <section id="sobre-nosotros">
-      <h2>Sobre Nosotros</h2>
-      <p>
-        Somos una Startup de estudiantes que se preocupan por la educación
-        equitativa para todos los estudiantes sin importar las condiciones en
-        las que se encuentren.
-      </p>
-      <img
-        src="imagenes/Logo (1).png"
-        alt="Logo IncluLearn"
-        class="logo-sobre-nosotros"
-      />
+
+    <!-- Sección 5: Registro -->
+    <section id="formulario" class="form-section">
+      <h2>Registro</h2>
+      <form class="form" id="registroForm">
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <span class="error" id="nombreError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+          <span class="error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="6"
+            required
+          />
+          <span class="error" id="passwordError"></span>
+        </div>
+        <button type="submit">Registrarse</button>
+      </form>
     </section>
 
-    <!-- Sección 5: Contacto -->
+    <!-- Sección 6: Contacto -->
     <section id="contacto">
-      <h2>Descarga la App</h2>
-      <div class="app-buttons">
-        <img src="imagenes/googleplay.png" alt="Descargar en Google Play" />
-        <img src="imagenes/appstore.png" alt="Descargar en App Store" />
-      </div>
-      <p>Contacta con nosotros:</p>
+      <h2>Contáctanos</h2>
       <div class="contact-info">
-        <img src="imagenes/Mail.png" alt="Correo electrónico" />
         <p>Email: incluLearn@gmail.com</p>
-        <img src="imagenes/Social Icons.png" alt="Facebook" />
-        <img src="imagenes/Social Icons (1).png" alt="Instagram" />
-        <img src="imagenes/Social Icons (2).png" alt="WhatsApp" />
         <p>WhatsApp: +51 987654321</p>
       </div>
     </section>
